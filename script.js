@@ -1,5 +1,5 @@
 const inputfield = document.getElementById('entry');
-const submitButton = document.getElementById('submit');
+const pushMe = document.getElementById('submit');
 
 console.log('inputfield');
 
@@ -7,7 +7,8 @@ console.log('inputfield');
 
 function buttonTest() {
     alert("button clicked");
+    console.log("button clicked");
 }
 
 inputfield.addEventListener('click', addListItem());
-submitButton.addEventListener('click', buttonTest());
+pushMe.addEventListener('click', buttonTest());
