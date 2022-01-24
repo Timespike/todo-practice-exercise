@@ -1,9 +1,8 @@
-const pushMe = document.getElementById('pushMe');
-
-// Add Items to the list
+const submitBtn = document.getElementById('submit-button');
+const entry = document.getElementById('entry');
 
 function buttonTest() {
     console.log("button clicked");
 }
 
-pushMe.addEventListener('click', buttonTest);
+submitBtn.addEventListener('click', buttonTest);
