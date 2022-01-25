@@ -3,12 +3,14 @@ const entry = document.getElementById('entry');
 const list = document.querySelector("ul");
 
 function isEnter(e) {
-    if (e.which === 13) {
-        buttonTest()
-    } 
+    let key = e.keyCode || e.which
+    if (key === 13) {
+        entry.preventDefault;
+        addListEntry;
+    }
 }
 
-function buttonTest() {
+function addListEntry() {
     if (entry.value.length > 0 && !entry.value.startsWith(' ')) {
         let li = document.createElement("li");
         li.appendChild(document.createTextNode(entry.value));
@@ -17,5 +19,5 @@ function buttonTest() {
     }
 }
 
-submitBtn.addEventListener('click', buttonTest);
-entry.addEventListener('keypress', isEnter(e));
+submitBtn.addEventListener('click', addListEntry);
+entry.addEventListener('keydown', isEnter);
