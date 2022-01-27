@@ -2,12 +2,14 @@
 
 body {
     font-family: 'Roboto', sans-serif;
+    justify-content: center;
 }
 
 .done {
     text-decoration: line-through;
 }
 
-.list-entry {
-    color: blue;
+ul {
+    list-style-type: none;
+    user-select: none;
 }
