@@ -21,4 +21,5 @@ function addListEntry() {
 }
 
 submitBtn.addEventListener('click', addListEntry);
+// try adding the logic to the event listener as an arrow function?
 entry.addEventListener('keydown', isEnter);
