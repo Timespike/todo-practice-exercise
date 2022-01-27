@@ -10,7 +10,7 @@ function addListEntry() {
         li.innerHTML = 
             `<div class="list-entry" onclick="this.classList.toggle('done')">
             ${entry.value} 
-            <button onclick="this.parentNode.remove()">Delete</button>
+            <button class="del-btn" onclick="this.parentNode.remove()">Delete</button>
             </div>`; 
         list.appendChild(li);
         entry.value = "";

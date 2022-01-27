@@ -12,4 +12,29 @@ body {
 ul {
     list-style-type: none;
     user-select: none;
+    font-size: 14px;
+}
+
+.del-btn {
+    background-color: dodgerblue;
+    border: none;
+    color: white;
+    border-radius: 5px;
+    margin-left: 10px;
+}
+
+.del-btn:hover {
+    filter: brightness(95%);
+}
+
+#submit-button {
+    background-color: firebrick;
+    border: none;
+    color: white;
+    border-radius: 5px;
+}
+
+#submit-button:hover {
+    filter: brightness(95%);
+    box-shadow: 2px rgb(99, 99, 99);
 }
