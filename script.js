@@ -2,13 +2,13 @@ const submitBtn = document.getElementById('submit-button');
 const entry = document.getElementById('entry');
 const list = document.querySelector("ul");
 
-function isEnter(e) {
-    let key = e.keyCode || e.which
-    if (key === 13) {
-        entry.preventDefault;
-        addListEntry;
-    }
-}
+// function isEnter(e) {
+//     let key = e.keyCode || e.which;
+//     if (key === 13) {
+//         addListEntry;
+        
+//     }
+// }
 
 function addListEntry() {
     if (entry.value.length > 0 && !entry.value.startsWith(' ')) {
@@ -20,4 +20,8 @@ function addListEntry() {
 }
 
 submitBtn.addEventListener('click', addListEntry);
-entry.addEventListener('keydown', isEnter);
+entry.addEventListener('keydown', (e) => {
+    if (e.code == 'Enter') {
+    addListEntry;
+    }
+});
