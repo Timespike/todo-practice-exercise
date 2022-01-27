@@ -2,10 +2,6 @@ const submitBtn = document.getElementById('submit-button');
 const entry = document.getElementById('entry');
 const list = document.querySelector("ul");
 
-// function toggleDone () {
-//     this.classList.toggle("done");
-// }
-
 function addListEntry() {
     // checks to make sure there's something to enter and it doesn't start with a space
     if (entry.value.length > 0 && !entry.value.startsWith(' ')) {
