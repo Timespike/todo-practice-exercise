@@ -3,11 +3,12 @@ const entry = document.getElementById('entry');
 const list = document.querySelector("ul");
 
 function isEnter(e) {
-    let key = e.keyCode || e.which
+    let key = e.keyCode || e.which;
     if (key === 13) {
         entry.preventDefault;
         addListEntry;
     }
+    
 }
 
 function addListEntry() {
