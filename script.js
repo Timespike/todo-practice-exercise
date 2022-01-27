@@ -7,9 +7,11 @@ function addListEntry() {
     if (entry.value.length > 0 && !entry.value.startsWith(' ')) {
         // creates list item and delete button
         let li = document.createElement("li");
-        li.innerHTML = `<div class="list-entry" 
-            onclick="this.classList.toggle('done')">${entry.value} 
-            <button onclick="this.parentNode.remove()">Delete</button></div>`; 
+        li.innerHTML = 
+            `<div class="list-entry" onclick="this.classList.toggle('done')">
+            ${entry.value} 
+            <button onclick="this.parentNode.remove()">Delete</button>
+            </div>`; 
         list.appendChild(li);
         entry.value = "";
     }
