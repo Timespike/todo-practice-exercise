@@ -2,7 +2,29 @@
 
 body {
     font-family: 'Roboto', sans-serif;
+    background: whitesmoke;
+}
+
+.whole-form {
+    display: flex;
     justify-content: center;
+    align-items: center;
+}
+
+.form-container {
+    min-height: 25%;
+    max-width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: white;
+}
+
+.list-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: white;
 }
 
 .done {
@@ -10,9 +32,17 @@ body {
 }
 
 ul {
+    max-width: 50%;
     list-style-type: none;
     user-select: none;
     font-size: 14px;
+    justify-content: center;
+    background: white;
+}
+
+li {
+    padding: 3px;
+    margin: 2px;
 }
 
 .del-btn {
